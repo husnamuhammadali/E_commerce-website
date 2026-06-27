@@ -1,0 +1,112 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyShop</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            MyShop
+        </div>
+
+        <nav>
+
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Categories</a>
+            <a href="#">Cart 🛒</a>
+            <a href="#">Login</a>
+
+        </nav>
+
+    </header>
+
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <h1>Welcome To MyShop</h1>
+
+            <p>
+                Buy quality products with the best prices.
+            </p>
+
+            <button>Shop Now</button>
+
+        </div>
+
+    </section>
+
+
+    <section class="products">
+
+        <h2>Featured Products</h2>
+
+        <div class="product-grid">
+
+            <div class="card">
+
+                <img src="{% static 'images/shoes.jpg' %}" alt="">
+
+                <h3>Running Shoes</h3>
+
+                <p>$45</p>
+
+                <button>Add To Cart</button>
+
+            </div>
+
+
+            <div class="card">
+
+                <img src="{% static 'images/watch.jpg' %}" alt="">
+
+                <h3>Smart Watch</h3>
+
+                <p>$120</p>
+
+                <button>Add To Cart</button>
+
+            </div>
+
+
+            <div class="card">
+
+                <img src="{% static 'images/phone.jpg' %}" alt="">
+
+                <h3>Mobile Phone</h3>
+
+                <p>$350</p>
+
+                <button>Add To Cart</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            © 2026 MyShop | Developed by Husna Ali
+        </p>
+
+    </footer>
+
+    <script src="{% static 'js/script.js' %}"></script>
+
+</body>
+
+</html>
